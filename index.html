@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>QRCode Tool</title>
+  </head>
+  <body>
+    <div class="generatorWrapper">
+      <!-- wrapper will change to .wrapper.active 
+        when button is clicked on-->
+      <header>
+        <h1>QR Code Generate</h1>
+        <p>
+          Please paste a url or text
+          <span class="error"></span>
+        </p>
+      </header>
+      <div class="form">
+        <!-- <input class="filebutoon" type="file" /> -->
+        <textarea placeholder="Enter text or url" value=""></textarea>
+        <button>Generate QR</button>
+
+        <div class="qr-code">
+          <img src="" alt="" />
+          <p></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
